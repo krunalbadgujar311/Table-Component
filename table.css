@@ -1,0 +1,59 @@
+table {
+    font-family: "Trebuchet MS",Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+
+  
+  table th,tfoot td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #FF6F61;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+table th:hover{
+    background-color: #ffcc00; /* Change to your desired color */
+}
+tfoot td:hover{
+  background-color: #ffcc00; /* Change to your desired color */
+}
+table tr:hover{
+    background-color: #3F88C5; /* Change to your desired color */
+    animation: colorShift 5s infinite;
+}
+
+FilteringTable{
+  text-align:center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8338EC;
+}
+  
+
+  @keyframes colorShift {
+    0% {
+      background-color: #D90429; /* Change to your desired color */
+    }
+    25% {
+      background-color: #7F6CBF; /* Change to your desired color */
+    }
+    50% {
+      background-color: #8338EC; /* Change to your desired color */
+    }
+    75% {
+      background-color: #17BEBB ; /* Change to your desired color */
+    }
+    100% {
+      background-color: #9B5DE5; /* Change to your desired color */
+    }
+  }
